@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+	<h1>MyShop</h1>
+	<input type="text" id="searchBox" placeholder="Search for products...">
+	<button class="cart-btn" onclick="openCart()">Cart (<span id="cartCount">0</span>)</button>
+</div>
+
+<div class="container">
+	<div id="loadingMsg" class="loading">Loading products, please wait...</div>
+	<div class="products" id="productList"></div>
+</div>
+
+<div class="cart-sidebar" id="cartSidebar">
+	<button class="close-cart" onclick="closeCart()">X</button>
+	<h2>Your Cart</h2>
+	<div id="cartItems"></div>
+	<div class="total-box">Total: ₹<span id="cartTotal">0</span></div>
+	<button id="checkoutBtn" onclick="checkout()">Checkout</button>
+</div>
+
+<footer>
+	&copy; 2026 MyShop. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
